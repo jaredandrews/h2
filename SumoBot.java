@@ -10,7 +10,7 @@ public class SumoBot {
 
     public static void main(final String[] args) {
         final Networking networking = new Networking();
-        final GameMap gameMap = networking.initialize("Jared");
+        final GameMap gameMap = networking.initialize("JazzyJ");
 
         // We now have 1 full minute to analyse the initial map.
         final String initialMapIntelligence =
@@ -32,7 +32,7 @@ public class SumoBot {
             for (int i = 0; i < allMyShips.size(); i++) {
                 final Ship ship = allMyShips.get(i);
 
-                if (i > (allMyShips.size() / 4)) {
+                if ( i % 3 == 0 ) {
                     // get planets
                     if (ship.getDockingStatus() != Ship.DockingStatus.Undocked) {
                         continue;
@@ -47,7 +47,7 @@ public class SumoBot {
                     });
 
                     for (final Planet planet : allPlanets) {
-                        if (planet.isOwned() && (planet.getOwner() == gameMap.getMyPlayer().getId())) {
+                        if (planet.isOwned() && (planet.getOwner() != gameMap.getMyPlayer().getId())) {
                             continue;                   
                         }
 
