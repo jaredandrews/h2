@@ -31,20 +31,30 @@ public class SumoBot {
             
             for (int i = 0; i < allMyShips.size(); i++) {
                 final Ship ship = allMyShips.get(i);
-
-                if ( i % 3 == 0 ) {
+                List<Planet> allPlanets = new ArrayList<>(gameMap.getAllPlanets().values());
+                allPlanets.sort(new Comparator<Planet>() {
+                    @Override
+                    public int compare(Planet p1, Planet p2) {
+                        return (int) (p1.getDistanceTo(new Position(ship.getXPos(), ship.getYPos())) - p2.getDistanceTo(new Position(ship.getXPos(), ship.getYPos())));
+                    }
+                });
+            
+                allEnemyShips.sort(new Comparator<Ship>() {
+                    @Override
+                    public int compare(Ship s1, Ship s2) {
+                        return (int) (s1.getDistanceTo(new Position(ship.getXPos(), ship.getYPos())) - s2.getDistanceTo(new Position(ship.getXPos(), ship.getYPos())));
+                    }
+                });
+                
+//                if ( i % 3 == 0 ) {
                     // get planets
+                if (getDistanceTo(allEnemyShips.get(0)) < getDistanceTo(allPlanets.get(0)) {
+                    
                     if (ship.getDockingStatus() != Ship.DockingStatus.Undocked) {
                         continue;
                     }
 
-                    List<Planet> allPlanets = new ArrayList<>(gameMap.getAllPlanets().values());
-                    allPlanets.sort(new Comparator<Planet>() {
-                        @Override
-                        public int compare(Planet p1, Planet p2) {
-                            return (int) (p1.getDistanceTo(new Position(ship.getXPos(), ship.getYPos())) - p2.getDistanceTo(new Position(ship.getXPos(), ship.getYPos())));
-                        }
-                    });
+
 
                     for (final Planet planet : allPlanets) {
                         if (planet.isOwned() && (planet.getOwner() != gameMap.getMyPlayer().getId())) {
@@ -67,12 +77,7 @@ public class SumoBot {
                     // attack other ships
 
                     // go to closest ships first
-                    allEnemyShips.sort(new Comparator<Ship>() {
-                        @Override
-                        public int compare(Ship s1, Ship s2) {
-                            return (int) (s1.getDistanceTo(new Position(ship.getXPos(), ship.getYPos())) - s2.getDistanceTo(new Position(ship.getXPos(), ship.getYPos())));
-                        }
-                    });
+
 
                     for (final Ship sh:  allEnemyShips) {
                         final ThrustMove thrustTowardsEnemyShip = Navigation.navigateShipTowardsTarget(gameMap, ship, new Position(sh.getXPos(), sh.getYPos()), Constants.MAX_SPEED / 2, true, Constants.MAX_NAVIGATION_CORRECTIONS, Math.PI/180.0);
