@@ -48,17 +48,18 @@ public class SumoBot {
                 
 //                if ( i % 3 == 0 ) {
                     // get planets
-                if (getDistanceTo(allEnemyShips.get(0)) < getDistanceTo(allPlanets.get(0)) {
-                    
-                    if (ship.getDockingStatus() != Ship.DockingStatus.Undocked) {
-                        continue;
-                    }
+                int planet_i=0, eship_i=0;
+                for (;;) {
+                    if (getDistanceTo(allEnemyShips.get(planet_i)) < getDistanceTo(allPlanets.get(planet_i)) {
+                        
+                        if (ship.getDockingStatus() != Ship.DockingStatus.Undocked) {
+                            break;
+                        }
 
-
-
-                    for (final Planet planet : allPlanets) {
-                        if (planet.isOwned() && (planet.getOwner() != gameMap.getMyPlayer().getId())) {
-                            continue;                   
+//                        for (final Planet planet : allPlanets) {
+                        if (planet.isOwned() && (planet.getOwner() == gameMap.getMyPlayer().getId())) {
+                            planet_i++;
+                            continue;
                         }
 
                         if (ship.canDock(planet)) {
@@ -66,26 +67,28 @@ public class SumoBot {
                             break;
                         }
 
-                        final ThrustMove newThrustMove = Navigation.navigateShipToDock(gameMap, ship, planet, Constants.MAX_SPEED/2);
+                        final ThrustMove newThrustMove = Navigation.navigateShipToDock(gameMap, ship, planet, Constants.MAX_SPEED/1.3);
                         if (newThrustMove != null) {
                             moveList.add(newThrustMove);
                         }
 
-                        break;
-                    }
-                } else {
-                    // attack other ships
+                            
+//                        }
+                    } else {
+                        // attack other ships
 
-                    // go to closest ships first
+                        // go to closest ships first
 
 
-                    for (final Ship sh:  allEnemyShips) {
-                        final ThrustMove thrustTowardsEnemyShip = Navigation.navigateShipTowardsTarget(gameMap, ship, new Position(sh.getXPos(), sh.getYPos()), Constants.MAX_SPEED / 2, true, Constants.MAX_NAVIGATION_CORRECTIONS, Math.PI/180.0);
-                        if (thrustTowardsEnemyShip != null) {
-                            moveList.add(thrustTowardsEnemyShip);
-                        }
+//                        for (final Ship sh:  allEnemyShips) {
+                        final ThrustMove thrustTowardsEnemyShip = Navigation.navigateShipTowardsTarget(gameMap, ship, new Position(sh.getXPos(), sh.getYPos()), Constants.MAX_SPEED, true, Constants.MAX_NAVIGATION_CORRECTIONS, Math.PI/180.0);
+                            
+                            if (thrustTowardsEnemyShip != null) {
+                                moveList.add(thrustTowardsEnemyShip);
+                            }
 
-                        break;
+//                            break;
+//                        }
                     }
                 }
             }
