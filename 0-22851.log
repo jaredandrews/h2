@@ -1,0 +1,102 @@
+[
+ {
+  "Error": {
+   "Message": "ERRORED! Got Exception (if any): ERROR: Bot #0: Received invalid character '[Planet[Entity[Position(127.29175407681954, 146.33800763151444), owner=-1, id=11, health=1490, radius=5.846680950655821], remainingProduction=841, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(157.61355166408936, 131.5382338738228), owner=-1, id=4, health=2148, radius=8.425417970872811], remainingProduction=1213, currentProduction=0, dockingSpots=3, dockedShips=[]], Planet[Entity[Position(75.70435473420041, 128.80946929696347), owner=-1, id=5, health=2148, radius=8.425417970872811], remainingProduction=1213, currentProduction=0, dockingSpots=3, dockedShips=[]], Planet[Entity[Position(201.90919692988894, 82.7287645768593), owner=-1, id=9, health=2148, radius=8.425417970872811], remainingProduction=1213, currentProduction=0, dockingSpots=3, dockedShips=[]], Planet[Entity[Position(38.090803070111065, 77.27123542314068), owner=-1, id=6, health=2148, radius=8.425417970872811], remainingProduction=1213, currentProduction=0, dockingSpots=3, dockedShips=[]], Planet[Entity[Position(68.51378512180969, 89.39514467590206), owner=-1, id=12, health=1490, radius=5.846680950655821], remainingProduction=841, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(171.4862148781903, 70.6048553240979), owner=-1, id=10, health=1490, radius=5.846680950655821], remainingProduction=841, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(128.48184503444077, 88.48184503444075), owner=-1, id=0, health=1401, radius=5.497570140826506], remainingProduction=791, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(111.51815496555925, 88.48184503444075), owner=-1, id=1, health=1401, radius=5.497570140826506], remainingProduction=791, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(164.29564526579952, 31.190530703036487), owner=-1, id=8, health=2148, radius=8.425417970872811], remainingProduction=1213, currentProduction=0, dockingSpots=3, dockedShips=[]], Planet[Entity[Position(82.38644833591067, 28.46176612617718), owner=-1, id=7, health=2148, radius=8.425417970872811], remainingProduction=1213, currentProduction=0, dockingSpots=3, dockedShips=[]], Planet[Entity[Position(111.51815496555923, 71.51815496555925), owner=-1, id=2, health=1401, radius=5.497570140826506], remainingProduction=791, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(128.48184503444077, 71.51815496555923), owner=-1, id=3, health=1401, radius=5.497570140826506], remainingProduction=791, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(112.7082459231804, 13.66199236848557), owner=-1, id=13, health=1490, radius=5.846680950655821], remainingProduction=841, currentProduction=0, dockingSpots=2, dockedShips=[]]]['. (at character 1.)\nInput received from bot:\n[Planet[Entity[Position(127.29175407681954, 146.33800763151444), owner=-1, id=11, health=1490, radius=5.846680950655821], remainingProduction=841, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(157.61355166408936, 131.5382338738228), owner=-1, id=4, health=2148, radius=8.425417970872811], remainingProduction=1213, currentProduction=0, dockingSpots=3, dockedShips=[]], Planet[Entity[Position(75.70435473420041, 128.80946929696347), owner=-1, id=5, health=2148, radius=8.425417970872811], remainingProduction=1213, currentProduction=0, dockingSpots=3, dockedShips=[]], Planet[Entity[Position(201.90919692988894, 82.7287645768593), owner=-1, id=9, health=2148, radius=8.425417970872811], remainingProduction=1213, currentProduction=0, dockingSpots=3, dockedShips=[]], Planet[Entity[Position(38.090803070111065, 77.27123542314068), owner=-1, id=6, health=2148, radius=8.425417970872811], remainingProduction=1213, currentProduction=0, dockingSpots=3, dockedShips=[]], Planet[Entity[Position(68.51378512180969, 89.39514467590206), owner=-1, id=12, health=1490, radius=5.846680950655821], remainingProduction=841, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(171.4862148781903, 70.6048553240979), owner=-1, id=10, health=1490, radius=5.846680950655821], remainingProduction=841, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(128.48184503444077, 88.48184503444075), owner=-1, id=0, health=1401, radius=5.497570140826506], remainingProduction=791, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(111.51815496555925, 88.48184503444075), owner=-1, id=1, health=1401, radius=5.497570140826506], remainingProduction=791, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(164.29564526579952, 31.190530703036487), owner=-1, id=8, health=2148, radius=8.425417970872811], remainingProduction=1213, currentProduction=0, dockingSpots=3, dockedShips=[]], Planet[Entity[Position(82.38644833591067, 28.46176612617718), owner=-1, id=7, health=2148, radius=8.425417970872811], remainingProduction=1213, currentProduction=0, dockingSpots=3, dockedShips=[]], Planet[Entity[Position(111.51815496555923, 71.51815496555925), owner=-1, id=2, health=1401, radius=5.497570140826506], remainingProduction=791, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(128.48184503444077, 71.51815496555923), owner=-1, id=3, health=1401, radius=5.497570140826506], remainingProduction=791, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(112.7082459231804, 13.66199236848557), owner=-1, id=13, health=1490, radius=5.846680950655821], remainingProduction=841, currentProduction=0, dockingSpots=2, dockedShips=[]]]\n^; Response received (if any): [Planet[Entity[Position(127.29175407681954, 146.33800763151444), owner=-1, id=11, health=1490, radius=5.846680950655821], remainingProduction=841, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(157.61355166408936, 131.5382338738228), owner=-1, id=4, health=2148, radius=8.425417970872811], remainingProduction=1213, currentProduction=0, dockingSpots=3, dockedShips=[]], Planet[Entity[Position(75.70435473420041, 128.80946929696347), owner=-1, id=5, health=2148, radius=8.425417970872811], remainingProduction=1213, currentProduction=0, dockingSpots=3, dockedShips=[]], Planet[Entity[Position(201.90919692988894, 82.7287645768593), owner=-1, id=9, health=2148, radius=8.425417970872811], remainingProduction=1213, currentProduction=0, dockingSpots=3, dockedShips=[]], Planet[Entity[Position(38.090803070111065, 77.27123542314068), owner=-1, id=6, health=2148, radius=8.425417970872811], remainingProduction=1213, currentProduction=0, dockingSpots=3, dockedShips=[]], Planet[Entity[Position(68.51378512180969, 89.39514467590206), owner=-1, id=12, health=1490, radius=5.846680950655821], remainingProduction=841, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(171.4862148781903, 70.6048553240979), owner=-1, id=10, health=1490, radius=5.846680950655821], remainingProduction=841, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(128.48184503444077, 88.48184503444075), owner=-1, id=0, health=1401, radius=5.497570140826506], remainingProduction=791, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(111.51815496555925, 88.48184503444075), owner=-1, id=1, health=1401, radius=5.497570140826506], remainingProduction=791, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(164.29564526579952, 31.190530703036487), owner=-1, id=8, health=2148, radius=8.425417970872811], remainingProduction=1213, currentProduction=0, dockingSpots=3, dockedShips=[]], Planet[Entity[Position(82.38644833591067, 28.46176612617718), owner=-1, id=7, health=2148, radius=8.425417970872811], remainingProduction=1213, currentProduction=0, dockingSpots=3, dockedShips=[]], Planet[Entity[Position(111.51815496555923, 71.51815496555925), owner=-1, id=2, health=1401, radius=5.497570140826506], remainingProduction=791, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(128.48184503444077, 71.51815496555923), owner=-1, id=3, health=1401, radius=5.497570140826506], remainingProduction=791, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(112.7082459231804, 13.66199236848557), owner=-1, id=13, health=1490, radius=5.846680950655821], remainingProduction=841, currentProduction=0, dockingSpots=2, dockedShips=[]]][Planet[Entity[Position(127.29175407681954, 146.33800763151444), owner=-1, id=11, health=1490, radius=5.846680950655821], remainingProduction=841, currentProduction=0, dockingSpots=2, dockedShips=[]], Planet[Entity[Position(157.61355166408936, 131.5382338738228), owner=-1, id=4, health=2148, radius=8.425417970872811], remainingProduction=1213, currentProduction=0, dockingSpots=3, dockedShips=[]], Planet[Entity[Position(75.70435473420041, 128.80946929696347), owner=-1, id=5, health=2148, radius=8.425417970872811], rem",
+   "Turn": 1
+  },
+  "Frames": [
+   {
+    "Time": 122,
+    "Turn": 0
+   },
+   {
+    "Time": 9
+   }
+  ],
+  "PlayerID": 0,
+  "PlayerName": "Jared"
+ },
+ {
+  "Error": {},
+  "Frames": [
+   {
+    "Time": 121,
+    "Turn": 0
+   },
+   {
+    "Commands": [
+     {
+      "angle": 292,
+      "magnitude": 3,
+      "owner": 1,
+      "queue_number": 0,
+      "shipId": 5,
+      "type": "thrust"
+     },
+     {
+      "angle": 287,
+      "magnitude": 3,
+      "owner": 1,
+      "queue_number": 0,
+      "shipId": 4,
+      "type": "thrust"
+     },
+     {
+      "angle": 292,
+      "magnitude": 3,
+      "owner": 1,
+      "queue_number": 0,
+      "shipId": 3,
+      "type": "thrust"
+     }
+    ],
+    "Planets": null,
+    "Ships": [
+     {
+      "cooldown": 0,
+      "docking": {
+       "status": "undocked"
+      },
+      "health": 255,
+      "id": 5,
+      "owner": 1,
+      "vel_x": 0.0,
+      "vel_y": 0.0,
+      "x": 121.12381978024774,
+      "y": 120.21844843629964
+     },
+     {
+      "cooldown": 0,
+      "docking": {
+       "status": "undocked"
+      },
+      "health": 255,
+      "id": 4,
+      "owner": 1,
+      "vel_x": 0.0,
+      "vel_y": 0.0,
+      "x": 120.87711511416821,
+      "y": 114.13108573211089
+     },
+     {
+      "cooldown": 0,
+      "docking": {
+       "status": "undocked"
+      },
+      "health": 255,
+      "id": 3,
+      "owner": 1,
+      "vel_x": 0.0,
+      "vel_y": 0.0,
+      "x": 121.12381978024774,
+      "y": 117.21844843629964
+     }
+    ],
+    "Time": 6,
+    "Turn": 1
+   }
+  ],
+  "PlayerID": 1,
+  "PlayerName": "Tamagocchi"
+ }
+]
